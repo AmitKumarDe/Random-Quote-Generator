@@ -23,7 +23,7 @@ function App() {
     <div className="app">
         <div className="card">
           <h2 className="heading">{quote.author}</h2>
-          <h3>"{quote.content}"</h3><br />
+          <h3>{quote.content}</h3><br />
           <button className="button" onClick={fetchData}>
             <span>NEW QUOTE</span>
           </button>
