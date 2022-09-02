@@ -9,7 +9,11 @@ function App() {
   const [quote, setQuote] = useState([]);
 
   useEffect(() => {
-    let data = async () => {};
+    let data = async () => {
+      let res = await axios.get("http://api.quotable.io/random");
+      console.log(res);
+      setQuote(res.data);
+    };
     data();
   }, []);
 
