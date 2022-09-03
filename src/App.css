@@ -25,7 +25,7 @@ body {
 
 .card {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-   transparent;
+    transparent;
   background-size: cover;
   background-position: center;
   width: 40%;
@@ -126,6 +126,13 @@ h3 {
 @media only screen and (max-width: 600px) {
   .card {
     width: 80%;
-    height: 50%;
+    height: 60%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 80%;
+    height: 60%;
+    color: #0f0f0f;
   }
 }
